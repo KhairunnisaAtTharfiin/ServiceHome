@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        app:cardBackgroundColor="#EBEBEB"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/name_title"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Alamat"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nama_title" />
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="lAMBAROSKEP"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/name_title"
+                app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+            <TextView
+                android:id="@+id/nama_title"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Nama"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Username"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/nama_title"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/jasa_title"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Masukkan Jasa"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_title" />
+
+            <TextView
+                android:id="@+id/jasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Potong Rumput"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/name_title"
+                app:layout_constraintTop_toBottomOf="@+id/alamat" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
